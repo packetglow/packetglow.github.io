@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · PacketGlow</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Privacy <b>policy</b></h1>
+<p class="lede">PacketGlow and the PacketGlow ops tool. Effective 21 October 2026.</p>
+
+<h2>Who we are</h2>
+<p>PacketGlow is a YouTube channel run by one person in Ireland. Contact: <a href="mailto:packetglow.studio@gmail.com">packetglow.studio@gmail.com</a>.</p>
+
+<h2>PacketGlow ops and your Google data</h2>
+<p>PacketGlow ops is a private command-line tool that publishes videos to the PacketGlow channel and reads that channel's
+analytics. <strong>Its only user is the channel owner, signing in to their own channel.</strong> It requests these Google
+OAuth scopes:</p>
+<ul>
+<li><code>youtube.upload</code>: upload the channel's videos and thumbnails;</li>
+<li><code>youtube</code> and <code>youtube.force-ssl</code>: set video details, captions, playlists and the pinned comment on the channel's own videos;</li>
+<li><code>yt-analytics.readonly</code>: read the channel's own analytics and reach reports (views, watch time, retention, impressions).</li>
+</ul>
+<p>What happens to that data:</p>
+<ul>
+<li><strong>Storage:</strong> the sign-in token is stored only on the owner's computer (<code>~/.config/packetglow</code>,
+readable by the owner only) and, for scheduled jobs, as an encrypted secret in the owner's private GitHub repository.
+Channel analytics are saved as files in that private repository to compare videos over time.</li>
+<li><strong>No sharing or selling:</strong> no data is sold, shared with third parties, used for advertising, or used to
+train AI models.</li>
+<li><strong>Revoking access:</strong> remove PacketGlow ops at any time at
+<a href="https://myaccount.google.com/permissions">Google Account → Third-party access</a>, or
+<a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>.
+Deleting the token file and the repository secret removes the stored copies.</li>
+</ul>
+<p>PacketGlow ops' use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>YouTube API Services</h2>
+<p>PacketGlow ops uses YouTube API Services. By using them you are bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>For research, the tool also reads <strong>public</strong> statistics of other YouTube channels (titles, view counts,
+durations) with an API key. Those statistics are cached for at most 30 days and then deleted. No personal data of viewers
+is collected.</p>
+
+<h2>This website and the channel</h2>
+<p>This website sets no cookies, runs no analytics or tracking, and has no forms. Watching the channel on YouTube is
+governed by YouTube's own terms and privacy policy; PacketGlow sees only the aggregated, anonymous statistics YouTube
+Studio shows every creator.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date. Questions or requests:
+<a href="mailto:packetglow.studio@gmail.com">packetglow.studio@gmail.com</a>.</p>
+<footer><a href="../">PacketGlow</a></footer>
+</body>
+</html>
